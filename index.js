@@ -30,9 +30,10 @@ let acender = (element, number) => {
     setTimeout(() => {
         element.classList.add('selected');
     }, number - 250);
+
     setTimeout(() => {
         element.classList.remove('selected');
-    });
+    }, number);
 }
 
 //verificar se o usuário clicou nos botões corretamente
